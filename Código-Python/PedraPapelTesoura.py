@@ -2,13 +2,13 @@ from random import randint
 from time import sleep
 ganhajogador = 0
 ganhacomputador = 0
-print("="*60)
+print("=" * 60)
 print("{:^60}".format("REGISTRO PARA O GAME"))
-print("="*60)
+print("=" * 60)
 nome= str(input("Nome do jogador: ")).title()
-print("="*60)
+print("=" * 60)
 print("{:^60}".format("GAME: PEDRA, PAPEL E TESOURA"))
-print("="*60)
+print("=" * 60)
 sleep(2)
 print('''REGRAS:
 1 - Se escolher algum número que não está nas
