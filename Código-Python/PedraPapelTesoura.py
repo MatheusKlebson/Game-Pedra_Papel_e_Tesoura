@@ -93,14 +93,14 @@ while True:
         ganhacomputador += 1 #Caso o jogador quebre a primeira regra
     if ganhajogador == 3 or ganhacomputador == 3:
         print(" ")
-        print("[PLACAR FINAL: Jogador {} {} X {} COMPUTADOR]".format(nome, ganhajogador, ganhacomputador))
+        print(f"[PLACAR FINAL: Jogador {nome} {ganhajogador} X {ganhacomputador} COMPUTADOR]")
     if ganhajogador == 3:
         print(" ")
         print("RECEBA O CAMPEÃO!!!")
         for c in range(3,0,-1):
             sleep(c)
             print(c)
-        print("O {} foi campeão com {} vitórias!!".format(nome,ganhajogador))
+        print(f"O {nome} foi campeão com {ganhajogador} vitórias!!")
         break
     elif ganhacomputador == 3:
         print(" ")
@@ -108,7 +108,7 @@ while True:
         for c in range(3,0,-1):
             sleep(c)
             print(c)
-        print("O Computador foi campeão com {} vitórias!!".format(ganhacomputador))
+        print(f"O Computador foi campeão com {ganhacomputador} vitórias!!")
         break
 print("Comecem os fogos!!!")
 for c in range(0,10):
