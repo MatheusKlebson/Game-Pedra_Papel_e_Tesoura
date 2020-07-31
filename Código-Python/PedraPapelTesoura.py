@@ -1,11 +1,14 @@
-from random import randint
-from time import sleep
+from random import randint 
+from time import sleep 
+#Variaveis que guardará o números de vitórias do computador e do jogador, conforme forem sendo conquistadas.
 ganhajogador = 0
 ganhacomputador = 0
+#Cabeçalho que haverá um registro para adicionar o nome que o jogador usará durante a partida.
 print("=" * 60)
 print("{:^60}".format("REGISTRO PARA O GAME"))
 print("=" * 60)
 nome= str(input("Nome do jogador: ")).title()
+#Cabeçalho principal do jogo com as Regras.
 print("=" * 60)
 print("{:^60}".format("GAME: PEDRA, PAPEL E TESOURA"))
 print("=" * 60)
@@ -16,9 +19,10 @@ opções o computador ganhará uma vitória
 
 2 - Se escolher alguma letra o jogo será interropido''')
 sleep(5)
+#Começa a interação a partida do jogador contra o computador
 while True:
     print(" ")
-    print("[PLACAR: Jogador {} {} X {} COMPUTADOR]".format(nome,ganhajogador,ganhacomputador))
+    print(f"[PLACAR: Jogador {nome} {ganhajogador} X {ganhacomputador} COMPUTADOR]")
     computador = randint(1,3)
     print(" ")
     jogador = int(input('''SUAS OPÇÕES:
@@ -86,7 +90,7 @@ while True:
             print("Empate!!")
             print(" ")
     else:
-        ganhacomputador += 1
+        ganhacomputador += 1 #Caso o jogador quebre a primeira regra
     if ganhajogador == 3 or ganhacomputador == 3:
         print(" ")
         print("[PLACAR FINAL: Jogador {} {} X {} COMPUTADOR]".format(nome, ganhajogador, ganhacomputador))
