@@ -32,6 +32,7 @@ while True:
     DIGITE: '''))
     print("Analisando...")
     sleep(3)
+    #Todas as condições possiveis para um jogo de Pedra, papel e tesoura
     if jogador == 1:
         print("{} escolheu Pedra".format(nome))
         if jogador == computador:
@@ -91,6 +92,7 @@ while True:
             print(" ")
     else:
         ganhacomputador += 1 #Caso o jogador quebre a primeira regra
+    #Fim de jogo
     if ganhajogador == 3 or ganhacomputador == 3:
         print(" ")
         print(f"[PLACAR FINAL: Jogador {nome} {ganhajogador} X {ganhacomputador} COMPUTADOR]")
